@@ -13,7 +13,7 @@ pipeline {
     }
     stage('Test') {
       steps {
-        sh 'make check || false'
+        sh 'which ls || false'
       }
     }
   }
