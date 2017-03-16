@@ -6,5 +6,10 @@ pipeline {
         sh 'echo STEFHEN'
       }
    }
- }
+    stage('Build Part Two') {
+      steps {
+        sh 'echo PART TWO'
+      }
+    }
+  }
 }
