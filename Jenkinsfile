@@ -1,14 +1,14 @@
 pipeline {
   agent any
   stages {
-    stage('PRE-BUILD STUFf') {
+    stage('PRE-BUILD STUFF HERE') {
       steps {
-        sh 'echo STEFHEN'
+        sh 'echo STEFHEN PRE BUILD STUFF'
       }
    }
-    stage('BUILD STUFF') {
+    stage('BUILD STUFF HERE') {
       steps {
-        sh 'echo PART TWO'
+        sh 'echo BUILD STUFF HERE'
       }
     }
   }
