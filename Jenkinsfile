@@ -11,5 +11,10 @@ pipeline {
         sh 'echo BUILD STUFF HERE'
       }
     }
+    stage('Test') {
+      steps {
+        sh 'make check || true'
+      }
+    }
   }
 }
