@@ -7,5 +7,8 @@ pipeline {
        sh './configure && make'
       }
     }
+    stage('Artifacts') {
+      archiveArtifacts artifacts: '**/nmap', fingerprint: true
+    }
   }
 }
