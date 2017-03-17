@@ -8,7 +8,9 @@ pipeline {
       }
     }
     stage('Artifacts') {
-      archiveArtifacts artifacts: '**/nmap', fingerprint: true
+      steps {
+        archiveArtifacts artifacts: '**/nmap', fingerprint: true
+      }
     }
   }
 }
